@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>convertedTemperatureDialog</class>
+ <widget class="QDialog" name="convertedTemperatureDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>convertedTemperature</string>
+  </property>
+  <property name="toolTip">
+   <string>convertedTemperature</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>2</number>
+  </property>
+  <property name="statusTip">
+   <string>convertedTemperature</string>
+  </property>
+  <property name="whatsThis">
+   <string>convertedTemperature</string>
+  </property>
+  <property name="accessibleName">
+   <string>convertedTemperature</string>
+  </property>
+  <property name="accessibleDescription">
+   <string>convertedTemperature</string>
+  </property>
+  <widget class="QLineEdit" name="convertedTemperature">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>113</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>ConvertedTemperature</string>
+   </property>
+   <property name="toolTipDuration">
+    <number>2</number>
+   </property>
+   <property name="statusTip">
+    <string>ConvertedTemperature</string>
+   </property>
+   <property name="whatsThis">
+    <string>ConvertedTemperature</string>
+   </property>
+   <property name="accessibleName">
+    <string>ConvertedTemperature</string>
+   </property>
+   <property name="accessibleDescription">
+    <string>ConvertedTemperature</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="convertedTemperatureLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Your Temperature</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>OK</string>
+   </property>
+   <property name="toolTipDuration">
+    <number>2</number>
+   </property>
+   <property name="statusTip">
+    <string>OK</string>
+   </property>
+   <property name="whatsThis">
+    <string>OK</string>
+   </property>
+   <property name="accessibleName">
+    <string>OK</string>
+   </property>
+   <property name="accessibleDescription">
+    <string>OK</string>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>convertedTemperatureDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
